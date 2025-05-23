@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# App de Agendamentos do Salão da Rosana
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um aplicativo web simples para gerenciamento de agendamentos de clientes em um salão de beleza. O app foi desenvolvido em React e utiliza o armazenamento local do navegador (localStorage) para salvar os dados dos agendamentos.
 
-## Available Scripts
+## Funcionalidades
 
-In the project directory, you can run:
+- Cadastrar novos agendamentos com nome, serviço, data, horário e observações
+- Listar todos os agendamentos salvos
+- Editar e excluir agendamentos existentes
+- Interface moderna, responsiva e fácil de usar
 
-### `npm start`
+## Como rodar o projeto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Pré-requisitos:**
+   - Node.js e npm instalados
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **Instale as dependências:**
+   ```
+   npm install
+   ```
 
-### `npm test`
+3. **Inicie o servidor de desenvolvimento:**
+   ```
+   npm start
+   ```
+   O app abrirá automaticamente no navegador em [http://localhost:3000](http://localhost:3000)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Estrutura do Projeto
 
-### `npm run build`
+- `src/pages/appointmentForm.js`: Formulário para criar novos agendamentos
+- `src/pages/appointmentList.js`: Lista de agendamentos com opções de editar e excluir
+- `src/services/appointmentService.js`: Funções para salvar, buscar, editar e excluir agendamentos no localStorage
+- `src/components/Navbar.js`: Navegação principal
+- `src/index.css`: Estilos globais do app
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Observações
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Todos os dados são salvos apenas no navegador do usuário (localStorage). Não há backend.
+- O app é apenas para fins de demonstração e uso local.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Personalização
+Se quiser adicionar novas funcionalidades ou mudar o visual, basta editar os arquivos em `src/`.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Desenvolvido com ❤️ para facilitar o dia a dia do Salão da Rosana.
