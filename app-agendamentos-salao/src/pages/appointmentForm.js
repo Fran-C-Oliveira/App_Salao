@@ -13,6 +13,11 @@ function AppointmentForm() {
     try {
       await saveAppointment({ clientName, service, date, time, notes });
       alert('Agendamento salvo com sucesso!');
+      setClientName('');
+      setService('');
+      setDate('');
+      setTime('');
+      setNotes('');
     } catch (error) {
       alert('Erro ao salvar agendamento!');
     }
